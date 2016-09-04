@@ -25,7 +25,7 @@
 	
 </style>
 <script type="text/javascript">
-	var mySoft=angular.module("mySoft",[]);
+	/* var mySoft=angular.module("mySoft",[]);
 	mySoft.controller("mySoftController",function($scope){
 		$scope.pages = {
 				"outlet":{"url":"outlet.html","title":"OUTLET"},
@@ -50,7 +50,70 @@
 		$scope.getOutlet=function($event){
 			alert($event.target.getAttribute("outlet"));
 		}
-	})
+	}) */
+	var mySoft=angular.module("mySoft",[]);
+	mySoft.controller("mySoftController",function($scope,$rootScope){
+		 $rootScope.pages = {
+				"outlet":{"url":"outlet.html","title":"OUTLET"},
+				"table":{"url":"table.html","title":"TABLE"},
+				"item":{"url":"item.html","title":"ITEMS"}
+		}; 
+		$rootScope.contentArea = $rootScope.pages.outlet.url; 
+		$rootScope.topMenuTitle=$rootScope.pages.outlet.title;
+		/* $scope.nextPage=function($event){
+			var event=$event.target.value;
+			$scope.contentArea = $scope.pages[event].url; 
+			$scope.topMenuTitle=$scope.pages[event].title;
+		}  */
+	}); 
+	mySoft.controller("outletController",function($scope,$rootScope){
+		//$scope.outletName="out1";
+		$scope.outlets=[{"outletName":"out1"},
+		                {"outletName":"out2"},
+						{"outletName":"out3"},
+						{"outletName":"out4"},
+						{"outletName":"out5"},
+						{"outletName":"out6"}]
+		$scope.getOutlet=function($event){
+			/* alert($event.target.getAttribute("outlet")); */
+			$rootScope.contentArea = $rootScope.pages.table.url; 
+			$rootScope.topMenuTitle=$rootScope.pages.table.title;
+		}
+	});
+
+	mySoft.controller("tableController",function($scope,$rootScope){
+		//$scope.outletName="out1";
+		$scope.tables=[{"tableName":"1"},
+		                {"tableName":"2"},
+						{"tableName":"3"},
+						{"tableName":"4"},
+						{"tableName":"5"},
+						{"tableName":"6"},
+						{"tableName":"7"},
+						{"tableName":"8"}]
+		$scope.getTable=function($event){
+			alert($event.target.getAttribute("tble"));
+			 $rootScope.contentArea = $rootScope.pages.item.url; 
+			$rootScope.topMenuTitle=$rootScope.pages.item.title; 
+		}
+	});
+
+	mySoft.controller("itemController",function($scope,$rootScope){
+		//$scope.outletName="out1";
+		$scope.items=[{"itemName":"item-1"},
+		                {"itemName":"item-2"},
+						{"itemName":"item-3"},
+						{"itemName":"item-4"},
+						{"itemName":"item-5"},
+						{"itemName":"item-6"},
+						{"itemName":"item-7"},
+						{"itemName":"item-8"}]
+		$scope.getItem=function($event){
+			alert($event.target.getAttribute("item"));
+			/* $rootScope.contentArea = $rootScope.pages.table.url; 
+			$rootScope.topMenuTitle=$rootScope.pages.table.title; */
+		}
+	});
 </script>
 </head>
 <body>
