@@ -15,15 +15,14 @@
 </head>
 <body>
 <div class="container-fluid" ng-app="mySoft" ng-controller="MySoftController">
-	<div class="row topMenu">
-		<p ng-bind="topMenuTitle" class="topMenuTitle"></p>
+	<div class="row header">
+		<p ng-bind="headerTitle" class="headerTitle"></p>
 	</div>
 	<div class="row">
 		<p>STEWARD : <span ng-bind="usrName"></span>RAJKUMAR</p>
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contentArea" ng-include='contentArea'></div>
-	<div class="bottomMenu">
-		
+	<div id="footer" class="footer">
 	</div>
 </div>
 </body>

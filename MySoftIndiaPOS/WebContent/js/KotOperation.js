@@ -7,10 +7,10 @@ function getPages(){
 	return pages;
 }
 function getItemMenu(){
-	var menus='<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">M1</div>'
-		+'<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">M1</div>'
-		+'<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">M1</div>'
-		+'<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">M1</div>';
+	var menus='<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 footerMenu">M1</div>'
+		+'<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 footerMenu">M2</div>'
+		+'<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 footerMenu">M3</div>'
+		+'<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 footerMenu">M4</div>';
 		return menus;
 }
 
