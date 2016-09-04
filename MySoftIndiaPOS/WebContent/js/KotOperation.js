@@ -6,6 +6,13 @@ function getPages(){
 		}; 
 	return pages;
 }
+function getItemMenu(){
+	var menus='<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">M1</div>'
+		+'<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">M1</div>'
+		+'<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">M1</div>'
+		+'<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">M1</div>';
+		return menus;
+}
 
 function getOutlets(){
 	var outlets=[{"outletName":"out1"},
@@ -29,13 +36,23 @@ function getTables(){
 		return tables;
 }
 function getItems(){
-	var items=[{"itemName":"item-1"},
-               {"itemName":"item-2"},
-				{"itemName":"item-3"},
-				{"itemName":"item-4"},
-				{"itemName":"item-5"},
-				{"itemName":"item-6"},
-				{"itemName":"item-7"},
-				{"itemName":"item-8"}];
+	var items=[{"itemName":"item-1",
+				"rate":"20"},
+               {"itemName":"item-2",
+            	 "rate":"20"},
+				{"itemName":"item-3",
+            	  "rate":"20"},
+				{"itemName":"item-4",
+            	  "rate":"20"},
+				{"itemName":"item-5",
+            	  "rate":"20"},
+				{"itemName":"item-6",
+            	  "rate":"20"},
+				{"itemName":"item-7",
+            	  "rate":"20"},
+				{"itemName":"item-8",
+            	 "rate":"20"}];
 	return items;
 }
+
+

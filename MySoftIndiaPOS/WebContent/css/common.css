@@ -1,7 +1,36 @@
+body {
+    font-family:serif;
+    font-size: 20px;
+ } 
+.topMenu{
+	background: blue;
+	height: 40px;
+	
+}
+.topMenuTitle{
+	text-align: center;
+	color:white;
+}
+	
+.bottomMenu{
+	position:fixed;
+   left:0px;
+   bottom:0px;
+   height:40px;
+   width:100%;
+   background:blue;
+	
+}
 .box{
 	background:red;
 	padding: 20px 20px;
 	border: 1px solid white;
 	text-align: center;
 	color:white;
+}
+.itemName{
+	text-align: left;
+}
+.rate{
+	text-align: right;
 }

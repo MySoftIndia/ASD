@@ -1,6 +1,9 @@
 <link rel="stylesheet" href="./css/common.css">
 <div class="" ng-controller="itemController">
 	<div ng-repeat="item in items">
-		<div class="box col-xs-4 col-sm-3 col-md-3 col-lg-2" item="{{item.itemName}}" ng-click="getItem($event)">{{item.itemName}}</div>
+		<div class="box col-xs-12 col-sm-12 col-md-4 col-lg-4"  ng-click="getItem(item.itemName,item.rate)">
+			<span class="col-xs-8 col-sm-8 col-md-8 col-lg-8 itemName">{{item.itemName}}</span>
+			<span class="col-xs-4 col-sm-4 col-md-4 col-lg-4 rate">{{item.rate}}</span>
+		</div>
 	</div>
 </div>
