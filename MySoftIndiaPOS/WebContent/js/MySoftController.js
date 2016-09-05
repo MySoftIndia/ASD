@@ -6,13 +6,14 @@ var mySoft=angular.module("mySoft",[]);
 		$rootScope.contentArea = $rootScope.pages.login.url; 
 		$rootScope.headerTitle=$rootScope.pages.login.title;
 		footerController($rootScope.pages.login.title); 
+		$rootScope.detail=true;
 		
 		
 	});
 	mySoft.controller("loginController",function($scope,$rootScope){
 		$scope.loginSubmit=function(){
 			alert($scope.userId);
-			
+			$rootScope.detail=false;
 			$rootScope.userId=$scope.userId;
 			
 			$rootScope.contentArea = $rootScope.pages.outlet.url; 

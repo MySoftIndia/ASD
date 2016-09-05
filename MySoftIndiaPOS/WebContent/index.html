@@ -21,8 +21,9 @@
 		<p ng-bind="headerTitle" class="col-xs-8 col-sm-8 col-md-10 col-lg-10 headerTitle"></p>
 		<i class="col-xs-2 col-sm-2 col-md-1 col-lg-1"></i>
 	</div>
-	<div class="row">
-		<p>STEWARD : <span ng-bind="userId"></span></p>
+	<div class="row" ng-hide="detail">
+		<p class="col-xs-12 col-sm-12 col-md-6 col-lg-6 pull-left">STEWARD : <span ng-bind="userId"></span></p>
+		<p class="col-md-6 col-lg-6 pull-left"></p>
 	</div>
 	<div class="row contentArea" ng-include='contentArea'></div>
 	<div id="footer" class="footer"></div>
