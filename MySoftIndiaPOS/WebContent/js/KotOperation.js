@@ -1,10 +1,22 @@
 function getPages(){
 	var pages={
+			"login":{"url":"login.html","title":"POS"},
 			"outlet":{"url":"outlet.html","title":"OUTLET"},
 			"table":{"url":"table.html","title":"TABLE"},
 			"item":{"url":"item.html","title":"ITEMS"}
 		}; 
 	return pages;
+}
+function footerController(footer){
+	var menu ='';
+	if(footer=="POS"){
+		menu= '<p class="footerMenu" style="font-size: 15px;">@ MySoftIndia.</p>';
+	}else if(footer=="ITEMS"){
+		menu= getItemMenu();
+	}
+	var footerMenu =""; 
+	footerMenu=angular.element(document.querySelector('#footer'));
+	footerMenu.empty().append(menu); 
 }
 function getItemMenu(){
 	var menus='<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 footerMenu">M1</div>'
@@ -15,12 +27,12 @@ function getItemMenu(){
 }
 
 function getOutlets(){
-	var outlets=[{"outletName":"out1"},
-                {"outletName":"out2"},
-				{"outletName":"out3"},
-				{"outletName":"out4"},
-				{"outletName":"out5"},
-				{"outletName":"out6"}];
+	var outlets=[{"outletName":"OUT1"},
+                {"outletName":"OUT2"},
+				{"outletName":"OUT3"},
+				{"outletName":"OUT4"},
+				{"outletName":"OUT5"},
+				{"outletName":"OUT6"}];
 	
 	return outlets;
 }

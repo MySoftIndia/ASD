@@ -1,15 +1,25 @@
-body {
-    font-family:serif;
-    font-size: 20px;
- } 
+
+ body {
+    font-family: Open Sans;
+    font-size: 14px;
+    line-height: 1.42857;
+    /*background: #333333;*/
+    height: 350px;
+    padding: 0;
+    margin: 0;
+}
 .header{
-	background: blue;
-	height: 40px;
+	background: #008aff;
+	height: 45px;
+	font-size: 20px;
+	font-weight: bold;
+	color:white;
+	padding: 8px 5px;
+	
 	
 }
 .headerTitle{
 	text-align: center;
-	color:white;
 }
 	
 .footer{
@@ -18,19 +28,29 @@ body {
    bottom:0px;
    height:40px;
    width:100%;
-   background:blue;
+   background:#008aff;
+   font-size: 20px;
 	
 }
 .footerMenu{
 	text-align:center;
 	color:white
 }
-.box{
-	background:red;
+.tableNo{
+	background:rgba(255, 126, 0, 0.8);
 	padding: 20px 20px;
-	border: 1px solid white;
+	border: 1px solid #2be047;
 	text-align: center;
 	color:white;
+	
+}
+.item{
+	background: rgb(218, 225, 217);
+	padding: 20px 20px;
+	border: 2px solid #84b78b;
+	text-align: center;
+	color: #231a1a;
+	
 }
 .itemName{
 	text-align: left;

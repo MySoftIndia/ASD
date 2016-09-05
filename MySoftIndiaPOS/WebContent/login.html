@@ -1,10 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Login</title>
-</head>
-<body>
-
-</body>
-</html>
+<div class="container login-body" ng-controller="loginController">
+	<div class="container-login col-md-offset-3 col-lg-offset-3 col-lg-6 col-md-6 col-sm-12 cols-xs-12 ">
+		<!-- <ul id="top-bar" class="nav nav-tabs nav-justified">
+				<li class="active"><a href="#login-access">Sign Up</a></li>
+				<li><a href="#">Forgot Password</a></li>
+		</ul> -->
+		<h2><i class="glyphicon glyphicon-log-in"></i><span class="logo1"> MySoft</span><span class="logo2">India</span></h2>	
+		<br>			
+		<div class="form-group ">
+			<label for="login" class="sr-only">Email</label>
+			<input ng-model="userId" type="text" class="form-control" name="userId" id="userId" placeholder="User Id" tabindex="1" value="" />
+		</div>
+		<div class="form-group ">
+			<label for="password" class="sr-only">Password</label>
+			<input ng-model="password" type="password" class="form-control" name="password" id="password"placeholder="Password" value="" tabindex="2" />
+		</div>
+		<br/>
+		<div class="form-group ">				
+				<button ng-click="loginSubmit()" type="submit" name="log-in" id="log-in" tabindex="5" class="btn btn-lg btn-primary btn-block">SignIn</button>
+		</div>
+		<div class="form-group"><div class="row"></div></div>
+		<div class="form-group ">
+			<a href="#" class="pull-right">Forgot Password?</a>
+		</div>
+	</div>
+</div>

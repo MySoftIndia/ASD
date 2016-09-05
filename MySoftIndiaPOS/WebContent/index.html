@@ -5,6 +5,7 @@
 <title>Insert title here</title>
 <link rel="stylesheet"  type="text/css" href="./css/lib/bootstrap.min.css" >
 <link rel="stylesheet"  type="text/css" href="./css/common.css" >
+<link rel="stylesheet"  type="text/css" href="./css/login.css" >
 <script type="text/javascript" src="./js/lib/angular.js"></script>
 <script type="text/javascript" src="./js/lib/angular-route.js"></script>
 <script type="text/javascript" src="./js/lib/jquery-3.1.0.min.js"></script>
@@ -16,14 +17,15 @@
 <body>
 <div class="container-fluid" ng-app="mySoft" ng-controller="MySoftController">
 	<div class="row header">
-		<p ng-bind="headerTitle" class="headerTitle"></p>
+		<i class="col-xs-2 col-sm-2 col-md-1 col-lg-1 glyphicon glyphicon-menu-left" ng-click=pageMove()></i>
+		<p ng-bind="headerTitle" class="col-xs-8 col-sm-8 col-md-10 col-lg-10 headerTitle"></p>
+		<i class="col-xs-2 col-sm-2 col-md-1 col-lg-1"></i>
 	</div>
 	<div class="row">
-		<p>STEWARD : <span ng-bind="usrName"></span>RAJKUMAR</p>
+		<p>STEWARD : <span ng-bind="userId"></span></p>
 	</div>
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contentArea" ng-include='contentArea'></div>
-	<div id="footer" class="footer">
-	</div>
+	<div class="row contentArea" ng-include='contentArea'></div>
+	<div id="footer" class="footer"></div>
 </div>
 </body>
 </html>
