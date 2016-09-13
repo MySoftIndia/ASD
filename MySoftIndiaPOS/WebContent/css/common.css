@@ -28,14 +28,19 @@
    bottom:0px;
    height:40px;
    width:100%;
-   background:#008aff;
+   background:#2f363c;
+   //-webkit-linear-gradient(top, grey, grey 30%, white 30%, white);
+   //background: linear-gradient(to bottom, black 0%,black 50%,#000000 50%,white 50%,white 100%);
    font-size: 20px;
+   
 	
 }
 .footerMenu{
 	text-align:center;
 	color:white;
 	padding-top: 8px;
+	border-left: 3px solid #9f9d9d;
+	font-size : 1.4em;
 }
 .tableNo{
 	background:rgba(255, 126, 0, 0.8);
@@ -89,12 +94,13 @@
 	padding-top : 5px;
 }
 .cart-total{
-	padding: 1px 5px 5px;
+	padding: 0px 4px 5px;
 	background: red none repeat scroll 0% 0%;
 	border-radius: 50%;
 	z-index: 999;
 	position: fixed;
-	margin-left: -26px;
+	margin-left: -35px;
+	margin-top : 4px;
 	font-size: 14px;
 	font-weight: bold;
 }
