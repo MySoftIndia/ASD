@@ -22,8 +22,8 @@ function getItemMenu(){
 	var menus='<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 footerMenu">M1</div>'
 		+'<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 footerMenu">M2</div>'
 		//+'<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 footerMenu">M3</div>'
-		+'<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 footerMenu glyphicon glyphicon-shopping-cart">'
-		+'<span id="total-qty">0</span>'
+		+'<div class="icon-shopping-cart icon-1x col-xs-4 col-sm-4 col-md-4 col-lg-4 footerMenu ">'
+		+'<span class="cart-total" id="total-qty">0</span>'
 		+'</div>';
 		return menus;
 }
@@ -89,7 +89,7 @@ function qtyMinus($event){
 	var totqty = $('#total-qty').text();
 	if(!Number(qty)==0){
 		var minus = Number(qty)-1;
-		$('#total-qty').text(Number(totqty)-minus);
+		$('#total-qty').text(Number(totqty)-1);
 		if(minus==0){
 			$('#'+id).css("color","rgba(255, 0, 0, 0.42)");
 		}
