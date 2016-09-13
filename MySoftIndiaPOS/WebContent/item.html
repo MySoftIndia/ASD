@@ -13,10 +13,18 @@
 		</div>
 		<!-- <input type="text" class="form-control" name="serch" id="serch" placeholder="Serch" tabindex="1" value="" /> -->
 	</div> 		
-	<div ng-repeat="item in items">
-		<div class="item col-xs-12 col-sm-12 col-md-4 col-lg-4" ng-click="getItem(item.itemName,item.rate)">
-			<span class="col-xs-8 col-sm-8 col-md-8 col-lg-8 itemName">{{item.itemName}}</span>
-			<span class="col-xs-4 col-sm-4 col-md-4 col-lg-4 rate">{{item.rate | currency:"&#8377;" }}</span>
-		</div>
+	<div class="item col-xs-12 col-sm-12 col-md-4 col-lg-4" ng-repeat="item in items">
+		<div class="col-xs-8 col-sm-9 col-md-9 col-lg-9 itemDiv" ng-click="getItem(item.itemName,item.rate)">
+			<!-- <div > -->
+				<span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 itemName">{{item.itemName}}</span>
+				<span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 rate">{{item.rate | currency:"&#8377;" }}</span>
+			</div>
+			<div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 qtyIncrease">
+				<span class="col-xs-4 col-sm-4 col-md-4 col-lg-4 glyphicon glyphicon-minus-sign minus" ng-click="qtyMinus($event)" id="{{ 'qty-minus' + $index }}"></span>
+				<span class="col-xs-4 col-sm-4 col-md-4 col-lg-4 qty" id="{{ 'qty' + $index }}">0</span>
+				<span class="col-xs-4 col-sm-4 col-md-4 col-lg-4 glyphicon glyphicon-plus-sign plus" ng-click="qtyPlus($event)" id="{{ 'qty-plus' + $index }}"></span>
+			</div>
+			
+		<!-- </div> -->
 	</div>
 </div>

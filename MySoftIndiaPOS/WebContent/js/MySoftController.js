@@ -47,6 +47,12 @@ var mySoft=angular.module("mySoft",[]);
 		$scope.getItem=function(itemName,rate){
 			alert(itemName +" " +rate);
 		};
+		$scope.qtyPlus = function($event){
+			qtyPlus($event);
+		};
+		$scope.qtyMinus = function($event){
+			qtyMinus($event);
+		};
 		$rootScope.pageMove=function(){
 			$rootScope.contentArea = $rootScope.pages.table.url;
 			$rootScope.headerTitle=$rootScope.pages.table.title;
